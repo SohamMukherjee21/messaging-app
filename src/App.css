@@ -1,3 +1,7 @@
+* {
+  scrollbar-width: none;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.app__form {
+  padding: 6px;
+  position: fixed;
+  bottom: 3.3px;
+  z-index: 1;
+  background-color: #e9e9eb;
+  width: 100%;
+  height: 7vh;
+  object-fit: contain;
+  /* margin: 0 auto 0 15px; */
+  /* border-radius: 15px; */
+}
+
+.random {
+  height: 81vh;
+  overflow-y: scroll;
+  object-fit: contain;
+  background-color: #a084ca;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  z-index: 2;
+  padding: 0 6px;
+}
+
+.app__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app__input {
+  flex: 1;
+}
+
+.app__iconButton {
+  flex: 0;
 }
